@@ -1,0 +1,46 @@
+<html>
+<style>
+table
+{
+margin-top:250px;
+}
+</style>
+
+<body>
+<script>
+function inc()
+{
+var cnt=document.getElementById("counter").value;
+cnt++;
+document.getElementById("counter").value=cnt;
+}
+
+function dec()
+{
+var cnt=document.getElementById("counter").value;
+cnt--;
+document.getElementById("counter").value=cnt;
+}
+
+function getback()
+{
+document.getElementById("counter").value=0;
+}
+</script>
+<p align="center">My Counter App</p>
+<table align="center">
+<tr>
+<td></td>
+<td><input type="button" value="0" id="counter"></td>
+<td></td>
+</tr>
+
+<tr>
+<td><input type="button" value="+" onclick="inc()"></td>
+<td><input type="button" value="Reset" onclick="getback()"></td> 
+<td><input type="button" value="-" onclick="dec()"></td>
+</tr>
+
+</table>
+</body>
+</html>
